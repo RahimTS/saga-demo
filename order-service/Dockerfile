@@ -18,7 +18,7 @@ FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 
 # Copy only the jar from builder stage
-COPY --from=builder /app/target/order-service-1.0.0.jar app.jar
+COPY --from=builder /app/target/*.jar app.jar
 
 # Actuator health port exposed
 EXPOSE 8081

@@ -12,7 +12,7 @@ FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
-COPY --from=builder /app/target/inventory-service-1.0.0.jar app.jar
+COPY --from=builder /app/target/*.jar app.jar
 
 EXPOSE 8082
 
