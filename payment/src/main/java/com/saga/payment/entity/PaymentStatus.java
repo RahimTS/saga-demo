@@ -1,0 +1,6 @@
+package com.saga.payment.entity;
+
+public enum PaymentStatus {
+    COMPLETED,
+    FAILED
+}
